@@ -3,17 +3,31 @@ var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do"));
 
 var savedEventLocalStorage;
-var 
+var saveBtns = document.querySelectorAll(".saveBtn");
 
-saveBtn.addEventListener("click", function) {
-    document.getElementById('myEventInput').value
-    localStorage.setItem
+//event listener added to save function logging input value.
 
+saveBtns.forEach((saveBtn) => {
+  saveBtn.addEventListener("click", handleClick);
+});
+
+function handleClick(event) {
+  var El = event.target;
+  console.log(El);
+  var parentNode = El.parentNode;
+  console.log(parentNode);
+  var inputField = parentNode.querySelector(".calendarInfo");
+  console.log(inputField);
+  console.log("button-clicked", event);
+  var inputValue = inputField.value;
+  console.log(inputValue);
+  localStorage.setItem("El", "inputValue");
 }
 
-var btn = document.getElementById('submit');
-btn.addEventListener('click', func);
+//save to local storage
 
-function func() {
-  console.log(document.getElementById("number").value)
-}
+saveBtns.addEventListener("click", saveToLocalStorage);
+
+var saveToLocalStorage = function () {
+  localStorage.setItem("textinput", text.textContent); //or change input to text
+};
