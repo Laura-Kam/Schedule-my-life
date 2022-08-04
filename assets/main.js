@@ -7,23 +7,23 @@ var saveBtns = document.querySelector(".saveBtn");
 
 //ensuring saved event persists by getting Item (stored)
 
-$("#hour-12 .calendarInfo").val(localStorage.getItem("hour-12"));
-
 $("#hour-9 .calendarInfo").val(localStorage.getItem("hour-9"));
 
 $("#hour-10 .calendarInfo").val(localStorage.getItem("hour-10"));
 
 $("#hour-11 .calendarInfo").val(localStorage.getItem("hour-11"));
 
-$("#hour-1 .calendarInfo").val(localStorage.getItem("hour-1"));
+$("#hour-12 .calendarInfo").val(localStorage.getItem("hour-12"));
 
-$("#hour-2 .calendarInfo").val(localStorage.getItem("hour-2"));
+$("#hour-13 .calendarInfo").val(localStorage.getItem("hour-13"));
 
-$("#hour-3 .calendarInfo").val(localStorage.getItem("hour-3"));
+$("#hour-14 .calendarInfo").val(localStorage.getItem("hour-14"));
 
-$("#hour-4 .calendarInfo").val(localStorage.getItem("hour-4"));
+$("#hour-15 .calendarInfo").val(localStorage.getItem("hour-15"));
 
-$("#hour-5 .calendarInfo").val(localStorage.getItem("hour-5"));
+$("#hour-16 .calendarInfo").val(localStorage.getItem("hour-16"));
+
+$("#hour-17 .calendarInfo").val(localStorage.getItem("hour-17"));
 
 //event listener added to save function logging input value.
 
@@ -56,8 +56,8 @@ function checkTime() {
       $(this).addClass("present");
     } else {
       $(this).removeClass("past");
-      $(this).addClass("future");
       $(this).removeClass("present");
+      $(this).addClass("future");
     }
   });
 }
