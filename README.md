@@ -14,7 +14,7 @@
 
 # Screenshot of website:
 
-![Screenshot of website](https://github.com/Laura-Kam/Schedule-my-life/issues/1#issue-1328676482)
+![Screenshot of website](https://laura-kam.github.io/Schedule-my-life/)
 
 # bugs
 
