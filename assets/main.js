@@ -44,9 +44,22 @@ function handleClick(event) {
   localStorage.setItem(timeId, inputValue);
 }
 
-//make events colour coded??
-
-var checkTime = function () {
-  var hour = $(".hour").text().
+function checkTime() {
+  var currentHour = moment().hours();
+  $(".time-block").each(function () {
+    var timeBlockHour = parseInt($(this).attr("id").split("-")[1]);
+    console.log(timeBlockHour);
+    if (timeBlockHour < currentHour) {
+      $(this).addClass("past");
+    } else if (timeBlockHour === currentHour) {
+      $(this).removeClass("past");
+      $(this).addClass("present");
+    } else {
+      $(this).removeClass("past");
+      $(this).addClass("future");
+      $(this).removeClass("present");
+    }
+  });
+}
 
 checkTime();
