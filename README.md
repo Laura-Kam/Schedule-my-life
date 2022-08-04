@@ -6,7 +6,7 @@
 
 # Link to deployed application
 
-[Link to deployed URL]()
+[https://laura-kam.github.io/Schedule-my-life/]()
 
 # Link to Git-hub repo.
 
@@ -14,7 +14,7 @@
 
 # Screenshot of website:
 
-![Screenshot of website](https://laura-kam.github.io/Schedule-my-life/)
+![Screenshot of website](https://github.com/Laura-Kam/Schedule-my-life/issues/1#issue-1328676482)
 
 # bugs
 
