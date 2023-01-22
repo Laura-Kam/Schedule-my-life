@@ -1,6 +1,6 @@
 //time display created with moment.js
 var today = moment();
-$("#currentDay").text(today.format("dddd, MMMM Do"));
+$("#currentDay").text(today.format("MMM Do YYYY"));
 
 var savedEventLocalStorage;
 var saveBtns = document.querySelector(".saveBtn");
@@ -43,6 +43,8 @@ function handleClick(event) {
   var timeId = $(this).parent().attr("id");
   localStorage.setItem(timeId, inputValue);
 }
+
+//different colours for past, present and events.
 
 function checkTime() {
   var currentHour = moment().hours();
